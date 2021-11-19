@@ -5,7 +5,7 @@
 This is a project template for students participating in Software Testing course
 at Tampere University.
 
-The repository only contains the source code that is under testing, `package.json` skeleton
+The repository contains the source code that is under testing, test scripts, `package.json` skeleton
 and LICENSE file.
 
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
