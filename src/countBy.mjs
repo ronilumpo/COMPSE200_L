@@ -32,7 +32,14 @@ function countBy(collection, iteratee) {
     if (hasOwnProperty.call(result, key)) {
       ++result[key]
     } else {
-      baseAssignValue(result, key, 0)
+
+
+      // Here we have a bug. The code does not memorize the first instance found, since it initializes it
+      // to be 0th instance instead of 1st. 
+      //baseAssignValue(result, key, 0) 
+      baseAssignValue(result, key, 1) 
+
+
     }
     return result
   }, {})
