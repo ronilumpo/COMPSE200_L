@@ -3,15 +3,9 @@ import {expect} from 'chai';
 import slice from "../src/slice.js"
 
 describe('slice', function(){
-
-/*    it('filter-funktion mukaan vaillinnaista funktiota eq(arvo, 2) voi vertailla', function(){
-        expect(filter(['a', ( arvo ) => eq(arvo, 2), 4, true, 0.200], (taulukkoarvo => taulukkoarvo === true))).to.deep.equal([true]);
-    });  */
-    
     it('slice-funktio ei toimi normaalitapauksessa', function(){
         expect(slice(['a', 2, 4, 0.2], 2, 3)).to.deep.equal([4]);
     });
-
     it('slice-funktio palauttaa solun vaikka yläindeksi on sama kuin alaindeksi', function(){
         expect(slice(['a', 2, 4, 0.2], 4, 4)).to.deep.equal([]);
     });
@@ -21,7 +15,6 @@ describe('slice', function(){
     it('slice-funktio menee sekaisin negatiivisesta yläindeksistä', function(){
 	expect(slice(['a', 2, 4, 0.2], 2, -2)).to.deep.equal([2]);
     });
-
     it('slice-funktio menee sekaisin isoista luvuista', function(){
 	expect(slice([], -(2**8), 2**8)).to.deep.equal([]);
     });
