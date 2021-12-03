@@ -10,10 +10,10 @@ describe('slice', function(){
         expect(slice(['a', 2, 4, 0.2], 4, 4)).to.deep.equal([]);
     });
     it('slice-funktio palauttaa solun vaikka negatiivinen alaindeksi viittaa 1-indeksoituna samaan soluun kuin yläindeksi', function(){
-	expect(slice(['a', 2, 4, 0.2], -1, 4)).to.deep.equal([]);
+	expect(slice(['a', 2, 4, 0.2], -1, 3)).to.deep.equal([]);
     });
     it('slice-funktio menee sekaisin negatiivisesta yläindeksistä', function(){
-	expect(slice(['a', 2, 4, 0.2], 2, -2)).to.deep.equal([2]);
+	expect(slice(['a', 2, 4, 0.2], 1, -2)).to.deep.equal([2]);
     });
     it('slice-funktio menee sekaisin isoista luvuista', function(){
 	expect(slice([], -(2**8), 2**8)).to.deep.equal([]);

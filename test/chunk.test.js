@@ -15,7 +15,7 @@ describe('chunk', function(){
     it('chunk-funktion tulisi palauttaa parametritaulukko sisäkkäisenä taulukkona kun osiopituus ylittää annetun taulukon pituuden.', function(){        
 	expect(chunk(['a', 'b', 'c'], 3 + 1)).to.equal([['a','b','c']]);
     });
-    it('chunk-funktion tulisi palauttaa parametritaulukko sisäkkäisenä taulukkona kun osiopituus ylittää annetun taulukon pituuden tai kun annettaan tyhjä taulukko.', function(){        
+    it('chunk-funktion tulisi palauttaa parametritaulukko sisäkkäisenä taulukkona kun osiopituus ylittää annetun taulukon pituuden tai kun annetaan tyhjä taulukko.', function(){        
 	expect(chunk([], 1)).to.equal([[]]);
     });    
 });
