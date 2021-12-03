@@ -13,9 +13,11 @@ and LICENSE file.
 To run tests:
  1. Clone the repository to a local folder. 
  2. Open console in this folder
- 3. Type in "npm run coverage"
+ 3. Run command "npm init" to initialize node.js
+ 4. Run command "npm install" to install dependencies
+ 5. Type in "npm run coverage" to run the tests
 
-After running the command, you will receive information about the tests. The information includes 
+After running the "npm run coverage" command, you will receive information about the tests. The information includes 
 passing and failing of the tests and a test coverage report. 
 
 Source code folder contains a separate license file that must **NOT** be removed under any circumstances!
